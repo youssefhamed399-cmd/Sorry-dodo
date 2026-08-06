@@ -157,7 +157,7 @@
             border-right: 3px solid #d4af37;
         }
 
-        /* --- فيديو --- */
+        /* ===== تنسيق الفيديو ===== */
         .video-container {
             display: flex;
             flex-direction: column;
@@ -167,14 +167,14 @@
 
         .video-wrapper {
             width: 100%;
-            max-width: 420px;
+            max-width: 560px; /* عرض عريض لفيديو أفقي */
             border-radius: 30px;
             overflow: hidden;
             border: 2px solid rgba(212, 175, 55, 0.4);
             box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
             background: #1a0b12;
             position: relative;
-            padding-bottom: 177.77%; /* نسبة 9:16 لفيديوهات Shorts */
+            padding-bottom: 56.25%; /* نسبة 16:9 للفيديو الأفقي */
             height: 0;
         }
 
@@ -193,30 +193,20 @@
             box-shadow: 0 15px 50px rgba(212, 175, 55, 0.25);
         }
 
-        .video-fallback {
-            margin-top: 15px;
+        .video-caption {
+            color: #a87d5a;
+            font-size: 0.9rem;
+            margin-top: 12px;
             text-align: center;
+            opacity: 0.8;
         }
 
-        .video-fallback a {
-            display: inline-block;
-            padding: 12px 35px;
-            background: linear-gradient(135deg, #d4af37, #b8860b);
-            color: #1a0b12;
-            font-weight: 700;
-            border-radius: 60px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 25px rgba(212, 175, 55, 0.3);
-            transition: 0.3s;
+        .video-caption i {
+            color: #d4af37;
+            margin: 0 5px;
         }
 
-        .video-fallback a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 35px rgba(212, 175, 55, 0.5);
-        }
-
-        /* --- الخاتمة --- */
+        /* ===== الخاتمة ===== */
         .closing-section {
             margin-top: 30px;
             padding-top: 25px;
@@ -265,7 +255,7 @@
     </style>
 </head>
 <body>
-    <!-- خلفيات -->
+    <!-- خلفيات متحركة -->
     <div class="bg-blur"></div>
     <div class="glow-orb orb1"></div>
     <div class="glow-orb orb2"></div>
@@ -285,20 +275,18 @@
             <p>أعتذر إليك بكل ما يحمله قلبي من ندم، وأعدك أن يكون حبي لكِ أفعالًا قبل أن يكون كلمات، واحتواءً قبل أن يكون وعودًا. فقط امنحيني فرصة أخرى لأثبت لكِ أن مكانك في قلبي لا ينافسه أحد.</p>
         </div>
 
-        <!-- ===== فيديو Shorts ===== -->
+        <!-- ===== فيديو YouTube الجديد ===== -->
         <div class="video-container">
             <div class="video-wrapper">
                 <iframe 
-                    src="https://www.youtube.com/embed/T-UT2ODLUCg" 
-                    title="فيديو Shorts" 
+                    src="https://www.youtube.com/embed/trCkPZjfdwQ" 
+                    title="اهداء 🖤 .راح اسجل روحي بأسمك" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="video-fallback">
-                <a href="https://youtube.com/shorts/T-UT2ODLUCg?si=yoZhUljbLVQS2HEc" target="_blank">
-                    <i class="fab fa-youtube" style="margin-left: 10px;"></i> شاهد الفيديو على YouTube
-                </a>
+            <div class="video-caption">
+                <i class="fas fa-play-circle"></i> أهدي لك هذه اللحظة <i class="fas fa-heart" style="color: #d4af37;"></i>
             </div>
         </div>
 
